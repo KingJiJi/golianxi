@@ -13,7 +13,7 @@ var ifde bool
 
 func init() {
 	flag.IntVar(&demo, "demo", 20000, "msgs per  second")
-	flag.StringVar(&message, "message", "", "message to publish")
+	flag.StringVar(&message, "text", "", "message to publish")
 	flag.BoolVar(&ifen, "encrypt", false, "compress the messages published")
 	flag.BoolVar(&ifde, "decrypt", false, "compress the messages published")
 }
@@ -21,6 +21,13 @@ func init() {
 var (
 	HELLOWORLD = []byte("Welcome2ucar~")
 	NIHAOUCAR  = []byte("devops2015")
+	USAGE      = `xx -text "XXXXXXXXXOOOOO"  -encrypt|-decrypt
+	     -text: the text that to be encrypt or decrypt
+		 -encrypt: encrypt
+		 -decrypt: decrypt
+		 -- encrypt and decrypt both are not  true or false
+
+	`
 )
 
 func main() {
@@ -33,10 +40,10 @@ func main() {
 	switch {
 	case ifen && ifde:
 	case !ifen && !ifde:
-		fmt.Printf("Can i help you?\n")
+		fmt.Printf("Can i help you?\n%s", USAGE)
 		return
 	case message == "":
-		fmt.Printf("no text to xxoo\n")
+		fmt.Printf("no text to xxoo\n%s", USAGE)
 		return
 	}
 
