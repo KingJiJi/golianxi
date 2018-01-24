@@ -51,6 +51,7 @@ func main() {
 			if ok {
 				cg.MarkOffset(ev, "")
 				nowcount++
+				//fmt.Printf("%s\n", ev.Value)
 			}
 
 		case ntf, more := <-cg.Notifications():
