@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"golang_code/blowfishencrypt/util"
+	"golianxi/blowfishencrypt/util"
 )
 
 /*
