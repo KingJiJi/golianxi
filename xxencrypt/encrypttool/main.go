@@ -22,12 +22,12 @@ var (
 	HELLOWORLD = []byte("Welcome2ucar~")
 	NIHAOUCAR  = []byte("devops2015")
 	USAGE      = `xx -text "XXXXXXXXXOOOOO"  -encrypt|-decrypt
-	     -text: the text that to be encrypt or decrypt
-		 -encrypt: encrypt
-		 -decrypt: decrypt
-		 -- encrypt and decrypt both are not  true or false
+    -text: the text that to be encrypt or decrypt
+    -encrypt: encrypt
+    -decrypt: decrypt
+    -- encrypt and decrypt both are not  true or false
 
-	`
+`
 )
 
 func main() {
